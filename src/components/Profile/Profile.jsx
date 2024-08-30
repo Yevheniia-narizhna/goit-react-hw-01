@@ -13,16 +13,16 @@ export default function Profile({name, tag, location, image, stats}) {
 
   <ul>
     <li>
-      <span>{stats.followers(key)}</span>
-      <span>{stats.followers[key]}</span>
+      <span>Followers</span>
+      <span>{stats.followers}</span>
     </li>
     <li>
       <span>Views</span>
-      <span>2000</span>
+      <span>{stats.views}</span>
     </li>
     <li>
       <span>Likes</span>
-      <span>3000</span>
+      <span>{stats.likes}</span>
     </li>
   </ul>
         </>
