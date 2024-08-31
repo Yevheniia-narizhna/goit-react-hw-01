@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './App.css'
+import s from './App.module.css'
 import userData from "../userData.json"
 import friends from "../friends.json";
 import transactions from "../transactions.json";
@@ -11,7 +11,8 @@ import TransactionHistory from './TransactionHistory/TransactionHistory';
 function App() {
 
   return (
-    <>
+    <div className={s.main}>
+      <div className={s.wrap}>
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -21,7 +22,8 @@ function App() {
       />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
-    </>
+      </div>
+    </div>
   )
 }
 
