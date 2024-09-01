@@ -1,18 +1,21 @@
 .item {
-    display: flex;
-    gap: 20px;
-    padding: 10px;
-    border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
 }
 .status {
-    font-size: 14px;
-    font-weight: 500;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .status.online {
-    color: green;
+  color: green;
 }
 
 .status.offline {
-    color: red;
+  color: red;
 }

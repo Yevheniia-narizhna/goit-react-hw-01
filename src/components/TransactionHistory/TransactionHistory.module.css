@@ -1,0 +1,24 @@
+.table,
+.tablH,
+.tablB {
+  border: 1px solid black;
+}
+.table {
+  height: 200px;
+  border-collapse: collapse;
+  width: 600px;
+}
+.tablH,
+.tablB {
+  padding: 6px;
+}
+.tablH {
+  background-color: #515151;
+  color: aliceblue;
+}
+.tablLine:nth-child(even) {
+  background-color: #bdbaba;
+}
+.tablLine:nth-child(odd) {
+  background-color: white;
+}
